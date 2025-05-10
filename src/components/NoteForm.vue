@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useNotesStore } from '../stores/notes'
-import { useCategoriesStore } from '../stores/categories'
 import CategorySelector from './CategorySelector.vue'
 
 const notesStore = useNotesStore()
-const categoriesStore = useCategoriesStore()
 
 const noteContent = ref('')
 const selectedCategory = ref('default')

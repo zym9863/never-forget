@@ -16,10 +16,6 @@ const filteredNotes = computed(() => {
   }
   return notesStore.getNotesByCategory(activeCategory.value)
 })
-
-function handleCategoryChange(categoryId: string) {
-  activeCategory.value = categoryId
-}
 </script>
 
 <template>
